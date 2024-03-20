@@ -10,7 +10,11 @@
 
 	<script>
 		
-		
+		fetch("prueba.txt")
+		.then(respuesta => respuesta.text())
+		.then(contenido => {
+			console.log(contenido);
+		});
 
 	</script>
 </body>
